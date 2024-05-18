@@ -1,3 +1,4 @@
+import { useParams } from "react-router-dom";
 import styles from "./City.module.css";
 
 const formatDate = (date) =>
@@ -18,6 +19,8 @@ function City() {
   };
 
   const { cityName, emoji, date, notes } = currentCity;
+
+  const { id } = useParams();
 
   return (
     <div className={styles.city}>
@@ -51,9 +54,7 @@ function City() {
         </a>
       </div>
 
-      <div>
-        <ButtonBack />
-      </div>
+      <div>{/* <ButtonBack /> */}</div>
     </div>
   );
 }
