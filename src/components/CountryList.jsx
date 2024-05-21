@@ -2,13 +2,15 @@
 import CountryItem from "./CountryItem.jsx";
 import styles from "./CountryList.module.css";
 import Spinner from "./Spinner.jsx";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import Message from "./Message.jsx";
+import { useCities } from "../contexts/CitiesContext.jsx";
 
-CountryList.prototype = {
-  cities: PropTypes.array.isRequired,
-};
-function CountryList({ cities, isLoading }) {
+// CountryList.prototype = {
+//   cities: PropTypes.array.isRequired,
+// };
+function CountryList() {
+  const { isLoading, cities } = useCities();
   if (isLoading) return <Spinner></Spinner>;
   if (!cities.length)
     return (
