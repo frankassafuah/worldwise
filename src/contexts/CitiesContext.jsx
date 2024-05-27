@@ -2,6 +2,7 @@
 /* eslint-disable react/prop-types */
 import {
   createContext,
+  useCallback,
   useContext,
   useEffect,
   useReducer,
@@ -57,18 +58,18 @@ function CitiesProvider({ children }) {
     fetchCities();
   }, []);
 
-  async function getCity(id) {
+  const getCity = useCallback(async function getCity(id) {
     try {
       dispatch({ type: "loading", payload: true });
       const res = await fetch(`http://localhost:9000/cities/${id}`);
       const data = await res.json();
-      dispatch({ type: "cities/get", payload: data });
+      dispatch({ type: "city/loaded", payload: data });
     } catch (error) {
       alert("there was an error");
     } finally {
       dispatch({ type: "loading", payload: false });
     }
-  }
+  }, []);
   async function createCity(newCity) {
     try {
       dispatch({ type: "loading", payload: true });
