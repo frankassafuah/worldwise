@@ -26,7 +26,7 @@ WorldWise is a web application that allows users to log and keep track of the co
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/worldwise.git
+   git clone https://github.com/frankassafuah/worldwise.git
    cd worldwise
 
 2. **Start the backend server:**
