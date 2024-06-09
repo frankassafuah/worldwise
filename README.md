@@ -38,3 +38,18 @@ WorldWise is a web application that allows users to log and keep track of the co
 
    ```bash
    npm run dev
+
+## Usage
+
+**Log In:**
+Log in with the existing credentials.
+
+**Add Countries:**
+Use the interactive map to select countries you have visited and add them to your travel log.
+
+**View Travel History:**
+Visualize all the countries you have visited on the map and view your travel statistics.
+
+**Important Note:**
+
+Desktop Only: Currently, the application is designed to work only on desktop devices. Responsive design for mobile and tablet devices has not been implemented yet.
