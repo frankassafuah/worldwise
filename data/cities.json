@@ -1,75 +1,27 @@
 {
   "cities": [
     {
-      "cityName": "Lisbon",
-      "country": "Portugal",
-      "emoji": "🇵🇹",
-      "date": "2027-10-31T15:59:59.138Z",
-      "notes": "My favorite city so far!",
-      "position": {
-        "lat": 38.727881642324164,
-        "lng": -9.140900099907554
-      },
-      "id": "73930385"
-    },
-    {
-      "cityName": "Madrid",
+      "id": "be10",
+      "cityName": "Les Valls de Valira",
       "country": "Spain",
       "emoji": "🇪🇸",
-      "date": "2027-07-15T08:22:53.976Z",
+      "date": "2024-06-09T22:35:28.289Z",
       "notes": "",
       "position": {
-        "lat": 40.46635901755316,
-        "lng": -3.7133789062500004
-      },
-      "id": "17806751"
+        "lat": "42.42345651793833",
+        "lng": "1.4501953125000002"
+      }
     },
     {
-      "cityName": "Berlin",
-      "country": "Germany",
-      "emoji": "🇩🇪",
-      "date": "2027-02-12T09:24:11.863Z",
-      "notes": "Amazing 😃",
-      "position": {
-        "lat": 52.53586782505711,
-        "lng": 13.376933665713324
-      },
-      "id": "98443197"
-    },
-    {
-      "id": "0c94",
+      "id": "92be",
       "cityName": "Accra",
       "country": "Ghana",
       "emoji": "🇬🇭",
-      "date": "2024-05-24T11:55:05.077Z",
-      "notes": "My location\n",
-      "position": {
-        "lat": "5.556873082088691",
-        "lng": "-0.20101547241210938"
-      }
-    },
-    {
-      "id": "9504",
-      "cityName": "Vitry-sur-Seine",
-      "country": "France",
-      "emoji": "🇫🇷",
-      "date": "2024-05-24T15:27:49.478Z",
+      "date": "2024-06-09T22:35:48.146Z",
       "notes": "",
       "position": {
-        "lat": "48.777912755501845",
-        "lng": "2.3730468750000004"
-      }
-    },
-    {
-      "id": "4340",
-      "cityName": "Nova Monte Verde",
-      "country": "Brazil",
-      "emoji": "🇧🇷",
-      "date": "2024-05-27T13:26:08.258Z",
-      "notes": "",
-      "position": {
-        "lat": "-9.79567758282973",
-        "lng": "-57.30468750000001"
+        "lat": "5.659718554577286",
+        "lng": "-0.17578125"
       }
     }
   ]
