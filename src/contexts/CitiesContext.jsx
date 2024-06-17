@@ -42,11 +42,15 @@ function CitiesProvider({ children }) {
     intialState
   );
 
+  const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
+
+  console.log(BASE_URL, "sd");
+
   useEffect(function () {
     async function fetchCities() {
       try {
         dispatch({ type: "loading", payload: true });
-        const res = await fetch("http://localhost:9000/cities");
+        const res = await fetch(`${BASE_URL}/cities`);
         const data = await res.json();
         dispatch({ type: "cities/loaded", payload: data });
       } catch (error) {
@@ -61,7 +65,7 @@ function CitiesProvider({ children }) {
   const getCity = useCallback(async function getCity(id) {
     try {
       dispatch({ type: "loading", payload: true });
-      const res = await fetch(`http://localhost:9000/cities/${id}`);
+      const res = await fetch(`${BASE_URL}/cities/${id}`);
       const data = await res.json();
       dispatch({ type: "city/loaded", payload: data });
     } catch (error) {
@@ -73,7 +77,7 @@ function CitiesProvider({ children }) {
   async function createCity(newCity) {
     try {
       dispatch({ type: "loading", payload: true });
-      const res = await fetch(`http://localhost:9000/cities`, {
+      const res = await fetch(`${BASE_URL}/cities`, {
         method: "POST",
         body: JSON.stringify(newCity),
         headers: {
@@ -91,7 +95,7 @@ function CitiesProvider({ children }) {
   async function deleteCity(id) {
     try {
       dispatch({ type: "loading", payload: true });
-      await fetch(`http://localhost:9000/cities/${id}`, {
+      await fetch(`${BASE_URL}/cities/${id}`, {
         method: "DELETE",
       });
       dispatch({ type: "city/deleted", payload: id });
